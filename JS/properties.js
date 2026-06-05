@@ -50,7 +50,7 @@ const properties = [
         size: 95,
         status: "For Sale",
         badge: "New",
-        image: "../images/villa2.jpg"
+        image: "../images/home4_exterior.jpg"
     },
     {
         id: 5,
@@ -63,7 +63,7 @@ const properties = [
         size: 650,
         status: "For Sale",
         badge: "Featured",
-        image: "../images/villa6.jpg"
+        image: "../images/home1_kitchen.jfif"
     },
     {
         id: 6,
@@ -76,7 +76,7 @@ const properties = [
         size: 210,
         status: "For Sale",
         badge: "",
-        image: "../images/villa4.jpg"
+        image: "../images/home3_interior.jpg"
     }
 ];
 
