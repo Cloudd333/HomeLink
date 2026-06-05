@@ -1,0 +1,302 @@
+/* ============================================================
+   HomeLink™ — About Us Page
+   ============================================================ */
+
+/* ── NAVBAR OVERRIDE ────────────────────────────────────── */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--frost-2);
+    padding: 14px 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar .nav-links a {
+    color: var(--navy);
+}
+
+.navbar .nav-links a::after {
+    background: var(--navy);
+}
+
+.navbar .nav-login {
+    color: var(--navy);
+}
+
+.navbar .btn-ghost {
+    color: var(--navy);
+    border-color: var(--navy);
+}
+
+.navbar .btn-ghost:hover {
+    background: var(--navy);
+    color: var(--white);
+}
+
+
+/* ── HERO ───────────────────────────────────────────────── */
+
+.about-hero {
+    position: relative;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/villa1.jpg');
+    background-size: cover;
+    background-position: center 40%;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+        rgba(17, 29, 51, 0.65) 0%,
+        rgba(17, 29, 51, 0.50) 100%);
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about-hero-content .hero-label {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.about-hero-content .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: var(--space-md);
+}
+
+.about-hero-content .hero-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+
+/* ── MISSION ────────────────────────────────────────────── */
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.mission-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+}
+
+.mission-stat {
+    background: var(--frost);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+    border: 1px solid var(--frost-2);
+    transition: var(--transition);
+}
+
+.mission-stat:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.mission-stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1;
+    margin-bottom: var(--space-sm);
+}
+
+.mission-stat-number span {
+    color: var(--olive);
+}
+
+.mission-stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+
+/* ── CORE VALUES ────────────────────────────────────────── */
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.value-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
+    border: 1px solid var(--frost-2);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.value-icon {
+    font-size: 36px;
+    margin-bottom: var(--space-md);
+}
+
+.value-card h4 {
+    margin-bottom: var(--space-sm);
+    color: var(--navy);
+}
+
+.value-card p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ── HISTORY ────────────────────────────────────────────── */
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.history-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    height: 420px;
+}
+
+.history-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ── TEAM ───────────────────────────────────────────────── */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.team-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--frost-2);
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.team-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.team-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.team-card-img {
+    height: 220px;
+    overflow: hidden;
+}
+
+.team-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.team-card:hover .team-card-img img {
+    transform: scale(1.05);
+}
+
+.team-card-body {
+    padding: var(--space-lg);
+}
+
+.team-card-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.team-card-role {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--olive);
+    margin-bottom: var(--space-sm);
+}
+
+.team-card-bio {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+
+/* ── CONTACT SECTION ────────────────────────────────────── */
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+    margin-top: var(--space-xl);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    color: var(--white);
+}
+
+.contact-icon {
+    font-size: 20px;
+}

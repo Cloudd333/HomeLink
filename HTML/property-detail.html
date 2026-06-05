@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Detail | HomeLink</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/property-detail.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="../images/HomeLinkLogo.jpg" alt="HomeLink Real Estate">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Properties.html">Listings</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="AboutUs.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="Login.html" class="nav-login">Login</a>
+                <a href="SignUp.html" class="btn btn-ghost btn-sm">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Property Hero Image -->
+    <div class="detail-hero">
+        <img src="" alt="Property" id="mainImage">
+        <button class="back-btn" onclick="window.location.href='Properties.html'">
+            ← Back to Listings
+        </button>
+    </div>
+
+    <!-- Thumbnail Gallery -->
+    <div class="thumbnail-bar">
+        <div class="container">
+            <div class="thumbnails" id="thumbnails"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="detail-section">
+        <div class="container">
+            <div class="detail-grid">
+
+                <!-- Left: Property Info -->
+                <div class="detail-left">
+
+                    <div class="detail-badges" id="detailBadges"></div>
+
+                    <h1 class="detail-title" id="detailTitle"></h1>
+                    <div class="detail-location" id="detailLocation"></div>
+                    <div class="detail-price" id="detailPrice"></div>
+
+                    <div class="divider"></div>
+
+                    <div class="detail-features" id="detailFeatures"></div>
+
+                    <div class="divider"></div>
+
+                    <h3 class="detail-section-heading">About This Property</h3>
+                    <p class="detail-description" id="detailDescription"></p>
+
+                    <div class="divider"></div>
+
+                    <h3 class="detail-section-heading">Location</h3>
+                    <div class="map-container">
+                        <iframe
+                            id="propertyMap"
+                            width="100%"
+                            height="320"
+                            style="border:0; border-radius: var(--radius);"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="">
+                        </iframe>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <h3 class="detail-section-heading">Share This Property</h3>
+                    <div class="share-buttons">
+                        <a href="#" class="share-btn share-facebook">Facebook</a>
+                        <a href="#" class="share-btn share-twitter">Twitter</a>
+                        <a href="#" class="share-btn share-linkedin">LinkedIn</a>
+                        <a href="#" class="share-btn share-whatsapp">WhatsApp</a>
+                    </div>
+
+                </div>
+
+                <!-- Right: Inquiry Form -->
+                <div class="detail-right">
+                    <div class="inquiry-card">
+
+                        <h3 class="inquiry-title">Enquire About This Property</h3>
+                        <p class="inquiry-subtitle">Our agents will get back to you within 24 hours</p>
+
+                        <form class="inquiry-form" onsubmit="handleInquiry(event)">
+
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="input" placeholder="Your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="input" placeholder="Your email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="input" placeholder="Your phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea class="input" rows="4" placeholder="I'm interested in this property..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width:100%">
+                                Send Enquiry
+                            </button>
+
+                        </form>
+
+                        <div class="inquiry-success" id="inquirySuccess">
+                            ✓ Your enquiry has been sent! We'll be in touch shortly.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../images/HomeLinkLogo.jpg" alt="HomeLink">
+                    <p>South Africa's most trusted real estate platform. Connecting buyers, sellers and renters with exceptional properties since 2020.</p>
+                </div>
+                <div>
+                    <div class="footer-heading">Properties</div>
+                    <ul class="footer-links">
+                        <li><a href="Properties.html">Buy</a></li>
+                        <li><a href="#">Rent</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">New Developments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Company</div>
+                    <ul class="footer-links">
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Support</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 HomeLink Real Estate. All rights reserved.</span>
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/property-detail.js"></script>
+
+</body>
+</html>

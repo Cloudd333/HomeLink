@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | HomeLink</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="../images/HomeLinkLogo.jpg" alt="HomeLink Real Estate">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Properties.html">Listings</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="AboutUs.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="nav-login" id="profileLink">My Profile</a>
+                <a href="index.html" class="btn btn-outline btn-sm">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="dashboard-welcome">
+                <div class="dashboard-avatar" id="dashboardAvatar">T</div>
+                <div>
+                    <h1 class="dashboard-title" id="dashboardTitle">Welcome back, Tlotlisang</h1>
+                    <p class="dashboard-subtitle">Here's what's happening with your properties</p>
+                </div>
+            </div>
+            <div class="dashboard-stats">
+                <div class="dash-stat">
+                    <div class="dash-stat-number">3</div>
+                    <div class="dash-stat-label">Saved</div>
+                </div>
+                <div class="dash-stat">
+                    <div class="dash-stat-number">2</div>
+                    <div class="dash-stat-label">Listings</div>
+                </div>
+                <div class="dash-stat">
+                    <div class="dash-stat-number">3</div>
+                    <div class="dash-stat-label">Alerts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Grid -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-grid">
+
+                <!-- Saved Properties -->
+                <div class="dash-card reveal">
+                    <div class="dash-card-header">
+                        <h3 class="dash-card-title">Saved Properties</h3>
+                        <a href="Properties.html" class="dash-card-link">Browse More →</a>
+                    </div>
+                    <div class="saved-list" id="savedList">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="dash-card reveal reveal-delay-1">
+                    <div class="dash-card-header">
+                        <h3 class="dash-card-title">Notifications</h3>
+                        <span class="notif-badge" id="notifBadge">3</span>
+                    </div>
+                    <div class="notif-list" id="notifList">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Profile Settings -->
+                <div class="dash-card reveal reveal-delay-2">
+                    <div class="dash-card-header">
+                        <h3 class="dash-card-title">Profile Settings</h3>
+                    </div>
+                    <div class="profile-content">
+                        <div class="profile-avatar-lg" id="profileAvatarLg">T</div>
+                        <div class="profile-fields" id="profileFields">
+                            <div class="profile-field">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="input" id="profileName" value="Tlotlisang Ntshabele">
+                            </div>
+                            <div class="profile-field">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="input" id="profileEmail" value="tlotlieyntshabie@gmail.com">
+                            </div>
+                            <div class="profile-field">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="input" id="profilePhone" placeholder="Add phone number">
+                            </div>
+                            <div class="profile-field">
+                                <label class="form-label">Location</label>
+                                <input type="text" class="input" id="profileLocation" value="Johannesburg, Gauteng">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="width:100%; margin-top: var(--space-md);" onclick="saveProfile()">
+                            Save Changes
+                        </button>
+                        <div class="profile-success" id="profileSuccess">
+                            ✓ Profile updated successfully
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Listings -->
+                <div class="dash-card reveal reveal-delay-3">
+                    <div class="dash-card-header">
+                        <h3 class="dash-card-title">My Listings</h3>
+                        <a href="#" class="dash-card-link">+ Add Listing</a>
+                    </div>
+                    <div class="my-listings-list" id="myListingsList">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../images/HomeLinkLogo.jpg" alt="HomeLink">
+                    <p>South Africa's most trusted real estate platform. Connecting buyers, sellers and renters with exceptional properties since 2020.</p>
+                </div>
+                <div>
+                    <div class="footer-heading">Properties</div>
+                    <ul class="footer-links">
+                        <li><a href="Properties.html">Buy</a></li>
+                        <li><a href="#">Rent</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">New Developments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Company</div>
+                    <ul class="footer-links">
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Support</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 HomeLink Real Estate. All rights reserved.</span>
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/dashboard.js"></script>
+
+</body>
+</html>

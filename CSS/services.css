@@ -1,0 +1,246 @@
+/* ============================================================
+   HomeLink™ — Services Page
+   ============================================================ */
+
+/* ── NAVBAR OVERRIDE ────────────────────────────────────── */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--frost-2);
+    padding: 14px 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar .nav-links a { color: var(--navy); }
+.navbar .nav-links a::after { background: var(--navy); }
+.navbar .nav-login { color: var(--navy); }
+
+.navbar .btn-ghost {
+    color: var(--navy);
+    border-color: var(--navy);
+}
+
+.navbar .btn-ghost:hover {
+    background: var(--navy);
+    color: var(--white);
+}
+
+
+/* ── HERO ───────────────────────────────────────────────── */
+
+.services-hero {
+    position: relative;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.services-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/Exotic_home1_exterior.jpg');
+    background-size: cover;
+    background-position: center 60%;
+}
+
+.services-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+        rgba(17, 29, 51, 0.65) 0%,
+        rgba(17, 29, 51, 0.50) 100%);
+}
+
+.services-hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.services-hero-content .hero-label {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.services-hero-content .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: var(--space-md);
+}
+
+.services-hero-content .hero-subtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+
+/* ── SERVICES GRID ──────────────────────────────────────── */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    border: 1px solid var(--frost-2);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-6px);
+}
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: var(--space-lg);
+}
+
+.service-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: var(--space-md);
+}
+
+.service-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+.service-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    flex: 1;
+}
+
+.service-list li {
+    font-size: 14px;
+    color: var(--text-muted);
+    padding-left: var(--space-md);
+    position: relative;
+}
+
+.service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--olive);
+    font-weight: 700;
+}
+
+
+/* ── BENEFITS ───────────────────────────────────────────── */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.benefit-item {
+    text-align: center;
+    padding: var(--space-xl);
+}
+
+.benefit-icon {
+    font-size: 36px;
+    margin-bottom: var(--space-md);
+}
+
+.benefit-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: var(--space-sm);
+}
+
+.benefit-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+}
+
+
+/* ── FAQ ────────────────────────────────────────────────── */
+
+.faq-grid {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.faq-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1px solid var(--frost-2);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: var(--space-lg) var(--space-xl);
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    background: var(--frost);
+}
+
+.faq-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    color: var(--olive);
+}
+
+.faq-item.open .faq-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 var(--space-xl);
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+    padding: 0 var(--space-xl) var(--space-lg);
+}

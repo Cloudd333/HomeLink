@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeLink — Where Dreams Find Doors</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="../images/HomeLinkLogo.jpg" alt="HomeLink Real Estate">
+            </div>
+            <ul class="nav-links">
+                <li><a href="Properties.html">Listings</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="AboutUs.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="Login.html" class="nav-login">Login</a>
+                <a href="SignUp.html" class="btn btn-ghost btn-sm">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span class="hero-label">HomeLink Real Estate</span>
+            <h1 class="hero-title">Where Dreams<br/>Find Doors</h1>
+            <p class="hero-subtitle">Discover exceptional properties across South Africa's most sought-after locations</p>
+
+            <!-- Smart Search Bar -->
+            <div class="hero-search">
+                <div class="search-field">
+                    <span class="search-field-label">Location</span>
+                    <select>
+                        <option value="">Any Location</option>
+                        <option>Cape Town</option>
+                        <option>Johannesburg</option>
+                        <option>Pretoria</option>
+                        <option>Durban</option>
+                        <option>Sandton</option>
+                        <option>Stellenbosch</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <span class="search-field-label">Property Type</span>
+                    <select>
+                        <option value="">Any Type</option>
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                        <option>Townhouse</option>
+                        <option>Estate</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <span class="search-field-label">Max Price</span>
+                    <select>
+                        <option value="">Any Price</option>
+                        <option>R 1 000 000</option>
+                        <option>R 3 000 000</option>
+                        <option>R 5 000 000</option>
+                        <option>R 10 000 000</option>
+                        <option>R 20 000 000+</option>
+                    </select>
+                </div>
+                <button class="hero-search-btn" onclick="window.location.href='Properties.html'">
+                    Search
+                </button>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span class="scroll-label">Scroll</span>
+        </div>
+    </section>
+
+
+    <!-- Stats Bar-->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-number"><span id="statProperties">0</span><span>+</span></div>
+                    <div class="stat-label">Properties Listed</div>
+                </div>
+                <div class="stat-item reveal reveal-delay-1">
+                    <div class="stat-number"><span id="statClients">0</span><span>+</span></div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item reveal reveal-delay-2">
+                    <div class="stat-number"><span id="statCities">0</span><span></span></div>
+                    <div class="stat-label">Cities Covered</div>
+                </div>
+                <div class="stat-item reveal reveal-delay-3">
+                    <div class="stat-number"><span id="statYears">0</span><span></span></div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Properties -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <span class="section-label">Hand Picked</span>
+                    <h2 class="section-title">Featured Properties</h2>
+                </div>
+                <a href="Properties.html" class="btn btn-outline">View All Listings</a>
+            </div>
+
+            <div class="properties-grid">
+
+                <!-- Property 1 -->
+                <div class="property-card reveal reveal-delay-1">
+                    <div class="property-card-img">
+                        <img src="../images/Exotic_home1_exterior.jpg" alt="Beautiful Family Home">
+                        <div class="property-card-badges">
+                            <span class="badge badge-navy">For Sale</span>
+                            <span class="badge badge-olive">Featured</span>
+                        </div>
+                        <button class="property-card-save" title="Save property">♡</button>
+                    </div>
+                    <div class="property-card-body">
+                        <div class="property-price">R 5 000 000</div>
+                        <div class="property-name">Beautiful Family Home</div>
+                        <div class="property-location">📍 Sandton, Johannesburg</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🛏</span>
+                                <span>4 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🚿</span>
+                                <span>3 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">📐</span>
+                                <span>320 m²</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card reveal reveal-delay-2">
+                    <div class="property-card-img">
+                        <img src="../images/villa1.jpg" alt="Luxury Villa">
+                        <div class="property-card-badges">
+                            <span class="badge badge-navy">For Sale</span>
+                        </div>
+                        <button class="property-card-save" title="Save property">♡</button>
+                    </div>
+                    <div class="property-card-body">
+                        <div class="property-price">R 7 000 000</div>
+                        <div class="property-name">Luxury Villa</div>
+                        <div class="property-location">📍 Clifton, Cape Town</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🛏</span>
+                                <span>5 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🚿</span>
+                                <span>4 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">📐</span>
+                                <span>480 m²</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card reveal reveal-delay-3">
+                    <div class="property-card-img">
+                        <img src="../images/5_Ruebe-4a05524d.jpg" alt="Exclusive Townhouse">
+                        <div class="property-card-badges">
+                            <span class="badge badge-navy">For Sale</span>
+                            <span class="badge badge-frost">New</span>
+                        </div>
+                        <button class="property-card-save" title="Save property">♡</button>
+                    </div>
+                    <div class="property-card-body">
+                        <div class="property-price">R 10 000 000</div>
+                        <div class="property-name">Exclusive Townhouse</div>
+                        <div class="property-location">📍 Umhlanga, Durban</div>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🛏</span>
+                                <span>6 Beds</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">🚿</span>
+                                <span>5 Baths</span>
+                            </div>
+                            <div class="property-feature">
+                                <span class="property-feature-icon">📐</span>
+                                <span>620 m²</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="reveal text-center" style="margin-bottom: var(--space-2xl);">
+                <span class="section-label">What Are You Looking For</span>
+                <h2 class="section-title">Find Your Path</h2>
+            </div>
+
+            <div class="quick-links-grid">
+                <a href="Properties.html" class="quick-link-card reveal reveal-delay-1">
+                    <div class="quick-link-card-bg" style="background-image: url('../images/Exotic_home1_exterior.jpg')"></div>
+                    <div class="quick-link-card-overlay"></div>
+                    <div class="quick-link-card-content">
+                        <div class="quick-link-card-title">Buy a Home</div>
+                        <div class="quick-link-card-sub">Browse hundreds of listings</div>
+                        <div class="quick-link-arrow">Explore →</div>
+                    </div>
+                </a>
+                <a href="listings.html" class="quick-link-card reveal reveal-delay-2">
+                    <div class="quick-link-card-bg" style="background-image: url('../images/villa1.jpg')"></div>
+                    <div class="quick-link-card-overlay"></div>
+                    <div class="quick-link-card-content">
+                        <div class="quick-link-card-title">Sell Your Home</div>
+                        <div class="quick-link-card-sub">List with South Africa's best</div>
+                        <div class="quick-link-arrow">Get Started →</div>
+                    </div>
+                </a>
+                <a href="Rentals.html" class="quick-link-card reveal reveal-delay-3">
+                    <div class="quick-link-card-bg" style="background-image: url('../images/5_Ruebe-4a05524d.jpg')"></div>
+                    <div class="quick-link-card-overlay"></div>
+                    <div class="quick-link-card-content">
+                        <div class="quick-link-card-title">Rent a Property</div>
+                        <div class="quick-link-card-sub">Find your perfect rental</div>
+                        <div class="quick-link-arrow">View Rentals →</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Testimonials-->
+    <section class="testimonials">
+        <div class="container">
+            <div class="reveal text-center" style="margin-bottom: var(--space-2xl);">
+                <span class="section-label">Client Stories</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+
+            <div class="testimonials-grid">
+
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">HomeLink made finding our dream home completely effortless. The team was professional, knowledgeable and genuinely cared about our needs.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div>
+                            <div class="testimonial-name">John Doe</div>
+                            <div class="testimonial-role">Homeowner, Sandton</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">I found my dream home through HomeLink. The search tools are intuitive, the listings are detailed and the whole process was smooth from start to finish.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">J</div>
+                        <div>
+                            <div class="testimonial-name">Jane Smith</div>
+                            <div class="testimonial-role">First-time Buyer, Cape Town</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal reveal-delay-3">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Sold my property in under two weeks at above asking price. HomeLink's market knowledge and network is simply unmatched in South Africa.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <div class="testimonial-name">Michael Peters</div>
+                            <div class="testimonial-role">Property Seller, Durban</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA-->
+    <section class="cta-section">
+        <div class="container reveal">
+            <span class="cta-label">Get Started Today</span>
+            <h2 class="cta-title">Ready to Find<br/>Your Dream Home?</h2>
+            <p class="cta-subtitle">Join thousands of South Africans who found their perfect property through HomeLink.</p>
+            <div class="cta-actions">
+                <a href="SignUp.html" class="btn btn-secondary btn-lg">Create an Account</a>
+                <a href="Properties.html" class="btn btn-ghost btn-lg">Browse Listings</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../images/HomeLinkLogo.jpg" alt="HomeLink">
+                    <p>South Africa's most trusted real estate platform. Connecting buyers, sellers and renters with exceptional properties since 2020.</p>
+                </div>
+                <div>
+                    <div class="footer-heading">Properties</div>
+                    <ul class="footer-links">
+                        <li><a href="Properties.html">Buy</a></li>
+                        <li><a href="Rentals.html">Rent</a></li>
+                        <li><a href="listings.html">Sell</a></li>
+                        <li><a href="#">New Developments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Company</div>
+                    <ul class="footer-links">
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Support</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 HomeLink Real Estate. All rights reserved.</span>
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../JS/home.js"></script>
+</body>
+</html>

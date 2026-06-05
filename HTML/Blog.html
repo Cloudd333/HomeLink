@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | HomeLink</title>
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/blog.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <img src="../images/HomeLinkLogo.jpg" alt="HomeLink Real Estate">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Properties.html">Listings</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="AboutUs.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="Login.html" class="nav-login">Login</a>
+                <a href="SignUp.html" class="btn btn-ghost btn-sm">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="blog-hero">
+        <div class="blog-hero-bg"></div>
+        <div class="blog-hero-overlay"></div>
+        <div class="blog-hero-content">
+            <span class="hero-label">Insights & Advice</span>
+            <h1 class="hero-title">The HomeLink Blog</h1>
+            <p class="hero-subtitle">Expert property advice, market insights and home buying tips</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="blog-filter">
+        <div class="container">
+            <div class="blog-filter-grid">
+                <input
+                    type="text"
+                    class="input"
+                    id="blogSearch"
+                    placeholder="Search articles..."
+                    oninput="filterPosts()">
+                <select class="input select" id="blogCategory" onchange="filterPosts()">
+                    <option value="">All Categories</option>
+                    <option value="buying">Buying Tips</option>
+                    <option value="selling">Selling Tips</option>
+                    <option value="market">Market Insights</option>
+                    <option value="renting">Renting</option>
+                    <option value="investment">Investment</option>
+                </select>
+            </div>
+            <p class="blog-results-count" id="blogResultsCount"></p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid" id="blogGrid">
+                <!-- Injected by JS -->
+            </div>
+            <div class="blog-empty" id="blogEmpty" style="display:none;">
+                <p>No articles found. Try a different search or category.</p>
+                <button class="btn btn-outline" onclick="resetFilters()">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../images/HomeLinkLogo.jpg" alt="HomeLink">
+                    <p>South Africa's most trusted real estate platform. Connecting buyers, sellers and renters with exceptional properties since 2020.</p>
+                </div>
+                <div>
+                    <div class="footer-heading">Properties</div>
+                    <ul class="footer-links">
+                        <li><a href="Properties.html">Buy</a></li>
+                        <li><a href="#">Rent</a></li>
+                        <li><a href="#">Sell</a></li>
+                        <li><a href="#">New Developments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Company</div>
+                    <ul class="footer-links">
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-heading">Support</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 HomeLink Real Estate. All rights reserved.</span>
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/blog.js"></script>
+
+</body>
+</html>
