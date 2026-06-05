@@ -12,10 +12,10 @@ const properties = {
         parking: 2,
         description: "A stunning family home nestled in the heart of Sandton. This property boasts a spacious open-plan living area, modern kitchen with top-of-the-range finishes, and a beautiful landscaped garden perfect for entertaining. Located minutes from top schools, shopping centres and major highways.",
         images: [
-            "../images/Exotic_home1_exterior.jpg",
-            "../images/Exotic_home1_bedroom.jpg",
-            "../images/Exotic_home1_lounge.jpg",
-            "../images/Exotic_home1_shower.jpg"
+            "../images/home2_patio.jfif",
+            "../images/home2_interior.jfif",
+            "../images/home2_kitchen.jfif",
+            "../images/home2_exterior.jfif"
         ],
         mapQuery: "Sandton, Johannesburg, South Africa"
     },
