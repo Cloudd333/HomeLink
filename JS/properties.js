@@ -11,7 +11,7 @@ const properties = [
         size: 320,
         status: "For Sale",
         badge: "Featured",
-        image: "../images/Exotic_home1_exterior.jpg"
+        image: "../images/home2_patio.jfif"
     },
     {
         id: 2,
