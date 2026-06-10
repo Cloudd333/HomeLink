@@ -77,8 +77,94 @@ const properties = [
         status: "For Sale",
         badge: "",
         image: "../images/home3_interior.jpg"
+    },
+    {
+        id: 7,
+        name: "Waterfront Penthouse",
+        location: "V&A Waterfront, Cape Town",
+        price: 18500000,
+        type: "apartment",
+        beds: 3,
+        baths: 3,
+        size: 280,
+        status: "For Sale",
+        badge: "Featured",
+        image: "../images/property7.jpg"
+    },
+    {
+        id: 8,
+        name: "Contemporary Bushveld Retreat",
+        location: "Hoedspruit, Limpopo",
+        price: 6200000,
+        type: "estate",
+        beds: 4,
+        baths: 3,
+        size: 390,
+        status: "For Sale",
+        badge: "New",
+        image: "../images/property8.jpg"
+    },
+    {
+        id: 9,
+        name: "Heritage Manor House",
+        location: "Franschhoek, Western Cape",
+        price: 12000000,
+        type: "house",
+        beds: 6,
+        baths: 5,
+        size: 720,
+        status: "For Sale",
+        badge: "",
+        image: "../images/property9.jpg"
+    },
+    {
+        id: 10,
+        name: "Sleek Garden Apartment",
+        location: "Rosebank, Johannesburg",
+        price: 1950000,
+        type: "apartment",
+        beds: 2,
+        baths: 1,
+        size: 88,
+        status: "For Sale",
+        badge: "New",
+        image: "../images/property10.jpg"
+    },
+    {
+        id: 11,
+        name: "Clifftop Ocean Villa",
+        location: "Clifton, Cape Town",
+        price: 22000000,
+        type: "villa",
+        beds: 5,
+        baths: 5,
+        size: 610,
+        status: "For Sale",
+        badge: "Featured",
+        image: "../images/property11.jpg"
+    },
+    {
+        id: 12,
+        name: "Gated Townhouse Complex",
+        location: "Morningside, Durban",
+        price: 4100000,
+        type: "townhouse",
+        beds: 3,
+        baths: 2,
+        size: 195,
+        status: "For Sale",
+        badge: "",
+        image: "../images/property12.jpg"
     }
 ];
+
+// ── SVG Icons ─────────────────────────────────────────────
+const icons = {
+    location: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`,
+    beds: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>`,
+    baths: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><line x1="3" y1="12" x2="21" y2="12"/></svg>`,
+    size: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>`
+};
 
 // ── State ────────────────────────────────────────────────
 let filteredProperties = [...properties];
@@ -121,11 +207,11 @@ function renderCards() {
             <div class="property-card-body">
                 <div class="property-price">${formatPrice(p.price)}</div>
                 <div class="property-name">${p.name}</div>
-                <div class="property-location">📍 ${p.location}</div>
+                <div class="property-location">${icons.location} ${p.location}</div>
                 <div class="property-features">
-                    <div class="property-feature">🛏 <span>${p.beds} Beds</span></div>
-                    <div class="property-feature">🚿 <span>${p.baths} Baths</span></div>
-                    <div class="property-feature">📐 <span>${p.size} m²</span></div>
+                    <div class="property-feature">${icons.beds} <span>${p.beds} Beds</span></div>
+                    <div class="property-feature">${icons.baths} <span>${p.baths} Baths</span></div>
+                    <div class="property-feature">${icons.size} <span>${p.size} m²</span></div>
                 </div>
             </div>
         </div>
