@@ -89,7 +89,7 @@ const properties = [
         size: 280,
         status: "For Sale",
         badge: "Featured",
-        image: "../images/property7.jpg"
+        image: "../images/home6_lounge.jfif"
     },
     {
         id: 8,
@@ -102,7 +102,7 @@ const properties = [
         size: 390,
         status: "For Sale",
         badge: "New",
-        image: "../images/property8.jpg"
+        image: "../images/home7_exterior.jpg"
     },
     {
         id: 9,
@@ -115,7 +115,7 @@ const properties = [
         size: 720,
         status: "For Sale",
         badge: "",
-        image: "../images/property9.jpg"
+        image: "../images/home10_exterior.jpg"
     },
     {
         id: 10,
@@ -128,7 +128,7 @@ const properties = [
         size: 88,
         status: "For Sale",
         badge: "New",
-        image: "../images/property10.jpg"
+        image: "../images/home8_exterior.jpeg"
     },
     {
         id: 11,
@@ -141,7 +141,7 @@ const properties = [
         size: 610,
         status: "For Sale",
         badge: "Featured",
-        image: "../images/property11.jpg"
+        image: "../images/home5_exterior.jfif"
     },
     {
         id: 12,
@@ -154,7 +154,7 @@ const properties = [
         size: 195,
         status: "For Sale",
         badge: "",
-        image: "../images/property12.jpg"
+        image: "../images/home9_exterior.jpg"
     }
 ];
 
