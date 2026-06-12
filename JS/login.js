@@ -1,5 +1,5 @@
 function handleLogin(event) {
     event.preventDefault();
-    // For now, navigate to homepage on login
-    window.location.href = 'index.html';
+    // For now, navigate to the dashboard on login
+    window.location.href = 'dashboard.html';
 }
