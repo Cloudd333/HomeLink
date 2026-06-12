@@ -9,7 +9,7 @@ const posts = [
         author: "Alice Johnson",
         date: "12 May 2024",
         readTime: "5 min read",
-        image: "../images/Exotic_home1_exterior.jpg"
+        image: "../images/blog_img1.jfif"
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const posts = [
         author: "Bob Smith",
         date: "28 Apr 2024",
         readTime: "4 min read",
-        image: "../images/villa1.jpg"
+        image: "../images/blog_img2.jfif"
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const posts = [
         author: "Carol White",
         date: "15 Apr 2024",
         readTime: "6 min read",
-        image: "../images/5_Ruebe-4a05524d.jpg"
+        image: "../images/blog_img3.jfif"
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ const posts = [
         author: "David Brown",
         date: "3 Apr 2024",
         readTime: "4 min read",
-        image: "../images/Exotic_home1_exterior.jpg"
+        image: "../images/blog_img4.jfif"
     },
     {
         id: 5,
@@ -53,7 +53,7 @@ const posts = [
         author: "Alice Johnson",
         date: "20 Mar 2024",
         readTime: "5 min read",
-        image: "../images/villa1.jpg"
+        image: "../images/blog_img5.jfif"
     },
     {
         id: 6,
@@ -64,7 +64,7 @@ const posts = [
         author: "David Brown",
         date: "8 Mar 2024",
         readTime: "7 min read",
-        image: "../images/5_Ruebe-4a05524d.jpg"
+        image: "../images/blog_img6.jfif"
     }
 ];
 
