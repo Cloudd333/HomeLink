@@ -41,7 +41,7 @@
 .services-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('../images/Exotic_home1_exterior.jpg');
+    background-image: url('../images/hero_display.jfif');
     background-size: cover;
     background-position: center 60%;
 }
@@ -106,8 +106,16 @@
 }
 
 .service-icon {
-    font-size: 40px;
+    width: 64px;
+    height: 64px;
+    background: var(--frost);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: var(--space-lg);
+    color: var(--navy);
+    border: 1px solid var(--frost-2);
 }
 
 .service-title {
@@ -163,8 +171,16 @@
 }
 
 .benefit-icon {
-    font-size: 36px;
-    margin-bottom: var(--space-md);
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    color: var(--olive);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .benefit-title {
