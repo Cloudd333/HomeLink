@@ -232,17 +232,20 @@
 }
 
 .share-btn {
-    padding: 8px 18px;
+    width: 44px;
+    height: 44px;
     border-radius: var(--radius-sm);
-    font-size: 13px;
-    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: var(--transition);
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 .share-btn:hover {
     opacity: 1;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
 }
 
 .share-facebook {
@@ -251,7 +254,7 @@
 }
 
 .share-twitter {
-    background: #1DA1F2;
+    background: #000000;
     color: white;
 }
 
