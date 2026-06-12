@@ -91,6 +91,8 @@ HomeLink/
 ### Dashboard
 ![Dashboard](images/screenshots/dashboard.png)
 
+### Gallery
+![Gallery](images/screenshots/gallery.png)
 ---
 
 ## 🗺️ Pages
