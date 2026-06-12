@@ -49,7 +49,7 @@
 .about-hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('../images/villa1.jpg');
+    background-image: url('../images/villa10.jpg');
     background-size: cover;
     background-position: center 40%;
 }
@@ -164,8 +164,16 @@
 }
 
 .value-icon {
-    font-size: 36px;
-    margin-bottom: var(--space-md);
+    width: 60px;
+    height: 60px;
+    background: var(--frost);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    color: var(--navy);
+    border: 1px solid var(--frost-2);
 }
 
 .value-card h4 {
@@ -298,5 +306,8 @@
 }
 
 .contact-icon {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--olive);
 }
